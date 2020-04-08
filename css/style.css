@@ -1,0 +1,350 @@
+* {margin: 0; padding: 0}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    font-weight: 900;
+    src: url("../fonts/OpenSans-Bold.woff");
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    font-weight: 400;
+    src: url("../fonts/OpenSans-Regular.woff");
+}
+
+.header {
+    background-image: url("../images/football_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0a0732;
+    opacity: 0.9;
+}
+
+.logo, .header-title, .container, .logo-footer, .footer-card {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 42%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.surface_logo_text {
+    fill: white;
+}
+
+.header-title {
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+    letter-spacing: 2px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+
+.header-title-one {
+    display: block;
+    margin-left: 6.5%;
+    font-size: 28px;
+    line-height: 31px;
+}
+
+.header-title-two {
+    display: block;
+    margin-left: 20%;
+    margin-top: 25px;
+    font-size: 28px;
+    line-height: 31px;
+}
+
+.container {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5e42b0;
+    border: none;
+    color: white;
+    font-family: OpenSans-Regular;
+    font-size: 8px;
+    text-transform: uppercase;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.download-image {
+    display: flex;
+    max-height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.download-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+    align-items: flex-start;
+}
+
+.download-class-one {
+
+}
+
+.download-class {
+    font-size: 8px;
+    font-family: OpenSans-Bold;
+}
+
+.download-button:nth-child(n+2) {
+    margin-top: 15px;
+}
+
+
+.download-logo {
+    fill: white;
+    width: 22px;
+}
+
+.games-title {
+    font-size: 50px;
+    line-height: 60px;
+    font-family: OpenSans-Bold;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin-left: 6.5%;
+    margin-top: 4.5%;
+    margin-bottom: 4.5%;
+}
+
+.athlets-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.athlets-section {
+
+}
+
+.card-title-container {
+    display: flex;
+    align-items: center;
+    margin-left: 6.5%;
+    margin-bottom: 25px;
+}
+
+.games-card-title {
+    color: #c1c1c1;
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+    font-size: 23px;
+    line-height: 34px;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+
+.games-card {
+    padding-top: 25px;
+    padding-bottom: 55px;
+}
+
+.games-card:nth-child(n+2) {
+    padding-top: 60px;
+}
+
+.games-card:nth-child(2n) {
+    background-color: #f5f4f9;
+}
+
+.games-card:nth-child(3) {
+    background-color: #5e42b0;
+    color: white;
+}
+
+.card-number {
+    font-size: 14px;
+    line-height: 34px;
+    font-family: OpenSans-Bold;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.card-number::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 5px;
+    background-color: #5e42b0;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -8px;
+}
+
+.card-number::after:nth-child(3n) {
+    background-color: #c1c1c1;
+}
+
+.athlets-card-description {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    line-height: 18px;
+    margin-right: 6.5%;
+    margin-left: 6.5%;
+    letter-spacing: 0.5px;
+}
+
+.active-image {
+    height: 350px;
+
+}
+
+.active-card {
+    padding-bottom: 55px;
+    overflow: hidden;
+    position: relative;
+}
+
+.active-number {
+    position: absolute;
+    font-size: 14px;
+    line-height: 34px;
+    font-family: OpenSans-Bold;
+    color: #f5f6f7;
+    letter-spacing: 1px;
+    padding: 15px 25px 25px;
+    background-color: #5e42b0;
+    margin-left: 6.5%;
+    margin-top: 290px;
+}
+
+.active-number::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 5px;
+    background-color: #ffffff;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -8px;
+}
+
+.active-card-title {
+    color: #e7e7e7;
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+    font-size: 28px;
+    line-height: 34px;
+    margin-top: 35px;
+    margin-bottom: 24px;
+    margin-left: 6.5%;
+    letter-spacing: 1px;
+}
+
+.athlets-card-description {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: OpenSans-Regular;
+    letter-spacing: 0.5px;
+}
+
+.footer {
+    background-image: url("../images/game_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+
+.footer:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0a0732;
+    opacity: 0.9;
+}
+
+.logo-footer {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.logo-footer-image {
+    width: 70px;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    fill: white;
+}
+
+.footer-card {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 75px;
+}
+
+
+.footer-title {
+    font-size: 32px;
+    font-family: OpenSans-Bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-description {
+    font-size: 14px;
+    font-family: OpenSans-Regular;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #9b8ec1;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.logo + .container {
+    margin-top: 80px;
+}

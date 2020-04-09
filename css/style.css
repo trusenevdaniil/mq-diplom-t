@@ -130,7 +130,7 @@
     width: 22px;
 }
 
-.games-title {
+.games-title, .players-title {
     font-size: 50px;
     line-height: 60px;
     font-family: OpenSans-Bold;
@@ -149,11 +149,7 @@
     min-height: 281px;
 }
 
-.athlets-section {
-
-}
-
-.card-title-container {
+.card-title-container, .players-title-container {
     display: flex;
     align-items: center;
     margin-left: 6.5%;
@@ -171,20 +167,20 @@
 }
 
 
-.games-card {
+.games-card, .players-card {
     padding-top: 25px;
     padding-bottom: 55px;
 }
 
 .games-card:nth-child(n+2) {
-    padding-top: 60px;
+    padding-top: 55px;
 }
 
 .games-card:nth-child(2n) {
     background-color: #f5f4f9;
 }
 
-.games-card:nth-child(3) {
+.games-card:nth-child(3n) {
     background-color: #5e42b0;
     color: white;
 }
@@ -211,11 +207,8 @@
     margin-top: -8px;
 }
 
-.card-number::after:nth-child(3n) {
-    background-color: #c1c1c1;
-}
 
-.athlets-card-description {
+.athlets-card-description, .players-card-description, .active-card-description {
     font-family: OpenSans-Regular;
     font-size: 15px;
     line-height: 18px;
@@ -230,6 +223,15 @@
     background-position: center;
     width: 100%;
     min-height: 281px;
+}
+
+.players-card:nth-child(2n) {
+    background-color: #f5f4f9;
+}
+
+.players-card:nth-child(3n) {
+    background-color: #090c35;
+    color: white;
 }
 
 .active-image-one {
@@ -422,16 +424,25 @@
         margin-left: 37%;
     }
 
-    .athlets-image {
-        position: absolute;
+    .players-title {
+        font-size: 80px;
     }
 
-    .card-title-container {
-        margin-left: 37%;
+    .athlets-image {
+        position: absolute;
+        background-image: url("../images/footballer_497.png");
+        background-position: left;
+        min-height: 699px;
+        margin-top: -50px;
+        margin-left: -160px;
     }
 
     .games-card-title {
         font-size: 32px;
+    }
+
+    .card-title-container {
+        margin-left: 37%;
     }
 
     .card-number {
@@ -443,9 +454,47 @@
         margin-top: -4px;
     }
 
+    .games-card, .players-card {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
     .athlets-card-description {
         font-size: 16px;
         margin-left: 37%;
+    }
+
+    .players {
+        position: relative;
+    }
+
+    .players-image {
+        position: absolute;
+        background-image: url("../images/basketballer_436.png");
+        background-position: right;
+        min-height: 699px;
+        margin-top: -190px;
+        margin-right: -160px;
+    }
+
+    .players-card-description {
+        font-size: 16px;
+        margin-right: 37%;
+    }
+
+    .active-image-one {
+        background-image: url("../images/be-active_960.jpg");
+        min-height: 583px;
+    }
+
+    .active-image-two {
+        background-image: url("../images/find-contact_960.jpg");
+        min-height: 583px;
+    }
+
+    .active-image-three {
+        background-image: url("../images/work-it_960.jpg");
+        min-height: 583px;
     }
 
     .active-card-title {

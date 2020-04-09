@@ -58,12 +58,12 @@
     letter-spacing: 2px;
     margin-top: 85px;
     margin-bottom: 85px;
+    font-size: 28px;
 }
 
 .header-title-one {
     display: block;
     margin-left: 6.5%;
-    font-size: 28px;
     line-height: 31px;
 }
 
@@ -71,8 +71,6 @@
     display: block;
     margin-left: 20%;
     margin-top: 25px;
-    font-size: 28px;
-    line-height: 31px;
 }
 
 .container {
@@ -111,6 +109,7 @@
     margin-left: 10px;
     letter-spacing: 0.5px;
     align-items: flex-start;
+    font-size: 8px;
 }
 
 .download-class-one {
@@ -118,7 +117,6 @@
 }
 
 .download-class {
-    font-size: 8px;
     font-family: OpenSans-Bold;
 }
 
@@ -144,9 +142,11 @@
 }
 
 .athlets-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    background-image: url("../images/footballer_192.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 281px;
 }
 
 .athlets-section {
@@ -224,15 +224,45 @@
     letter-spacing: 0.5px;
 }
 
-.active-image {
-    height: 350px;
+.players-image {
+    background-image: url("../images/basketballer_302.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 281px;
+}
 
+.active-image-one {
+    background-image: url("../images/be-active.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 350px;
+}
+
+.active-image-two {
+    background-image: url("../images/find-contact.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 350px;
+}
+
+.active-image-three {
+    background-image: url("../images/work-it.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 350px;
 }
 
 .active-card {
     padding-bottom: 55px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 .active-number {
@@ -345,6 +375,83 @@
     margin-right: 1.5%;
 }
 
-.logo + .container {
-    margin-top: 80px;
-}
+@media (min-width:640px) and (max-width:959px) {
+    .logo {
+        width: 26%;
+    }
+
+    .header-title {
+        font-size: 64px;
+        margin-top: 165px;
+        margin-bottom: 300px;
+    }
+
+    .download-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .download-button {
+        width: 40%;
+        border-top-left-radius: 40px ;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .download-button:nth-child(n+2) {
+        margin-top: 0;
+    }
+
+    .download-image {
+        max-height: 80px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .download-text {
+        font-size: 14px;
+    }
+
+    .athlets {
+        position: relative;
+    }
+
+    .games-title {
+        font-size: 80px;
+        margin-left: 37%;
+    }
+
+    .athlets-image {
+        position: absolute;
+    }
+
+    .card-title-container {
+        margin-left: 37%;
+    }
+
+    .games-card-title {
+        font-size: 32px;
+    }
+
+    .card-number {
+        font-size: 18px;
+    }
+
+    .card-number::after {
+        width: 20px;
+        margin-top: -4px;
+    }
+
+    .athlets-card-description {
+        font-size: 16px;
+        margin-left: 37%;
+    }
+
+    .active-card-title {
+        font-size: 80px;
+        line-height: 60px;
+    }
+
+
+   }

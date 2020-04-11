@@ -12,6 +12,10 @@
     src: url("../fonts/OpenSans-Regular.woff");
 }
 
+a:hover {
+    background-color: #9b8ec1;
+}
+
 .header {
     background-image: url("../images/football_767.jpg");
     background-repeat: no-repeat;
@@ -35,12 +39,12 @@
     opacity: 0.9;
 }
 
-.logo, .header-title, .container, .logo-footer, .footer-card {
+.logo, .header-title, .container, .logo-footer, .footer-card, .logo-end {
     position: relative;
     z-index: 2;
 }
 
-.logo {
+.logo, .logo-end {
     width: 42%;
     margin-left: auto;
     margin-right: auto;
@@ -94,13 +98,14 @@
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    text-decoration: none;
 }
 
 .download-image {
     display: flex;
     max-height: 35px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 .download-text {
@@ -112,12 +117,12 @@
     font-size: 8px;
 }
 
-.download-class-one {
-
-}
-
 .download-class {
     font-family: OpenSans-Bold;
+}
+
+.download-class-one {
+    font-family: OpenSans-Regular;
 }
 
 .download-button:nth-child(n+2) {
@@ -342,7 +347,7 @@
 .logo-footer-image {
     width: 70px;
     box-sizing: border-box;
-    background-color: blueviolet;
+    background-color: #5e42b0;
     border-top-left-radius: 20px ;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -388,6 +393,14 @@
         margin-bottom: 300px;
     }
 
+    .header-title-one {
+        margin-left: 11%;
+    }
+
+    .header-title-two {
+        margin-left: 25%;
+    }
+
     .download-buttons {
         display: flex;
         justify-content: center;
@@ -399,6 +412,7 @@
         border-top-right-radius: 40px;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
+        font-size: 14px;
     }
 
     .download-button:nth-child(n+2) {
@@ -407,12 +421,17 @@
 
     .download-image {
         max-height: 80px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
 
     .download-text {
         font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .download-logo {
+        width: 35px;
     }
 
     .athlets {
@@ -482,6 +501,22 @@
         margin-right: 37%;
     }
 
+    .active-number {
+        font-size: 24px;
+        padding: 35px 45px 45px;
+        margin-top: 503px;
+    }
+
+    .active-number::after {
+        width: 28px;
+        height: 5px;
+        border-top-left-radius: 20px ;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: -2px;
+    }
+
     .active-image-one {
         background-image: url("../images/be-active_960.jpg");
         min-height: 583px;
@@ -500,6 +535,43 @@
     .active-card-title {
         font-size: 80px;
         line-height: 60px;
+        margin-top: 85px;
+        margin-bottom: 30px;
+    }
+
+    .active-card-description {
+        margin-bottom: 95px;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
+
+    .logo-footer {
+    }
+
+    .logo-footer-image {
+        width: 135px;
+        margin-top: 30px;
+    }
+
+    .footer-card {
+        margin-top: 75px;
+        margin-bottom: 280px;
+    }
+
+    .footer-title {
+        font-size: 80px;
+        line-height: 60px;
+    }
+
+    .footer-description {
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    .logo-end {
+        width: 26%;
+        margin-top: 45px;
     }
 
 

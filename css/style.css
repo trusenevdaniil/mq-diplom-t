@@ -23,7 +23,6 @@ a:hover {
     background-size: cover;
     background-color: black;
     color: white;
-    height: 100vh;
     position: relative;
 }
 
@@ -44,7 +43,7 @@ a:hover {
     z-index: 2;
 }
 
-.logo, .logo-end {
+.logo {
     width: 42%;
     margin-left: auto;
     margin-right: auto;
@@ -80,6 +79,7 @@ a:hover {
 .container {
     padding-left: 6.5%;
     padding-right: 6.5%;
+    padding-bottom: 80px;
 }
 
 .download-button {
@@ -324,7 +324,6 @@ a:hover {
     background-size: cover;
     background-color: black;
     color: white;
-    height: 100vh;
     position: relative;
 }
 
@@ -382,6 +381,69 @@ a:hover {
     margin-right: 1.5%;
 }
 
+.logo-end {
+    width: 42%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:640px) {
+    .container {
+        padding-bottom: 110px;
+    }
+
+    .download-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .download-button {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .download-button:nth-child(n+2) {
+        margin-top: 0;
+    }
+
+    .download-text {
+        font-size: 14px;
+    }
+
+    .athlets {
+        position: relative;
+    }
+
+    .games-title, .players-title {
+        font-size: 80px;
+    }
+
+    .athlets-image {
+        position: absolute;
+        background-position: left;
+    }
+
+    .card-number {
+        font-size: 18px;
+    }
+
+    .card-number::after {
+        width: 20px;
+        margin-top: -4px;
+    }
+
+    .players {
+        position: relative;
+    }
+
+    .players-image {
+        position: absolute;
+        background-position: right;
+    }
+}
+
 @media (min-width:640px) and (max-width:959px) {
     .logo {
         width: 26%;
@@ -401,22 +463,8 @@ a:hover {
         margin-left: 25%;
     }
 
-    .download-buttons {
-        display: flex;
-        justify-content: center;
-    }
-
     .download-button {
         width: 40%;
-        border-top-left-radius: 40px ;
-        border-top-right-radius: 40px;
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
-        font-size: 14px;
-    }
-
-    .download-button:nth-child(n+2) {
-        margin-top: 0;
     }
 
     .download-image {
@@ -426,7 +474,6 @@ a:hover {
     }
 
     .download-text {
-        font-size: 14px;
         margin-left: 20px;
     }
 
@@ -434,23 +481,12 @@ a:hover {
         width: 35px;
     }
 
-    .athlets {
-        position: relative;
-    }
-
     .games-title {
-        font-size: 80px;
         margin-left: 37%;
     }
 
-    .players-title {
-        font-size: 80px;
-    }
-
     .athlets-image {
-        position: absolute;
         background-image: url("../images/footballer_497.png");
-        background-position: left;
         min-height: 699px;
         margin-top: -50px;
         margin-left: -160px;
@@ -464,15 +500,6 @@ a:hover {
         margin-left: 37%;
     }
 
-    .card-number {
-        font-size: 18px;
-    }
-
-    .card-number::after {
-        width: 20px;
-        margin-top: -4px;
-    }
-
     .games-card, .players-card {
         padding-top: 35px;
         padding-bottom: 35px;
@@ -483,14 +510,8 @@ a:hover {
         margin-left: 37%;
     }
 
-    .players {
-        position: relative;
-    }
-
     .players-image {
-        position: absolute;
         background-image: url("../images/basketballer_436.png");
-        background-position: right;
         min-height: 699px;
         margin-top: -190px;
         margin-right: -160px;
@@ -571,8 +592,102 @@ a:hover {
 
     .logo-end {
         width: 26%;
-        margin-top: 45px;
     }
 
 
    }
+
+@media (min-width:960px) {
+
+    .header {
+        background-image: url("../images/football_1920.jpg");
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .header-title {
+        font-size: 90px;
+        margin-top: 275px;
+        margin-bottom: 200px;
+        letter-spacing: 5px;
+        margin-right: 10%;
+    }
+
+    .header-title-one {
+        margin-left: 10%;
+    }
+
+    .header-title-two {
+        margin-left: 33%;
+    }
+
+    .download-button {
+        width: 312px;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .download-image {
+        margin-top: 23px;
+        margin-bottom: 23px;
+    }
+
+    .download-logo {
+        width: 50px;
+    }
+
+    .games-title {
+        margin-left: 52%;
+    }
+
+    .athlets-image {
+        background-image: url("../images/footballer_566.png");
+        min-height: 908px;
+        margin-top: -170px;
+        margin-left: 20%;
+    }
+
+    .games-card, .players-card {
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+
+    .games-card-title {
+        font-size: 36px;
+        letter-spacing: 1.5px;
+    }
+
+    .card-title-container {
+        margin-left: 52%;
+    }
+
+    .athlets-card-description {
+        font-size: 20px;
+        line-height: 28px;
+        margin-left: 52%;
+        margin-right: 10%;
+    }
+
+    .card-number {
+        margin-top: -3px;
+    }
+
+    .players-title {
+        margin-top: 115px;
+    }
+
+    .players-image {
+        background-image: url("../images/basketballer_991.png");
+        min-height: 815px;
+        margin-top: -240px;
+        margin-left: -6%;
+    }
+
+    .players-card-description {
+        font-size: 20px;
+        line-height: 28px;
+        margin-right: 50%;
+    }
+}

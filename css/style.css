@@ -239,29 +239,23 @@ a:hover {
     color: white;
 }
 
-.active-image-one {
-    background-image: url("../images/be-active.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 350px;
+.players-card:nth-child(3) .card-number {
+    color: #5e42b0;
+}
+.players-card:nth-child(3) .card-number::after {
+    background-color: #ffffff;
 }
 
-.active-image-two {
-    background-image: url("../images/find-contact.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 350px;
+.games-card:nth-child(3) .card-number::after {
+    background-color: #ffffff;
 }
 
-.active-image-three {
-    background-image: url("../images/work-it.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.active-image-one, .active-image-two, .active-image-three {
+    overflow: hidden;
+}
+
+.active-image-link {
+    object-fit: cover;
     width: 100%;
     min-height: 350px;
 }
@@ -562,18 +556,7 @@ a:hover {
         margin-top: 503px;
     }
 
-    .active-image-one {
-        background-image: url("../images/be-active_960.jpg");
-        min-height: 583px;
-    }
-
-    .active-image-two {
-        background-image: url("../images/find-contact_960.jpg");
-        min-height: 583px;
-    }
-
-    .active-image-three {
-        background-image: url("../images/work-it_960.jpg");
+    .active-image-link {
         min-height: 583px;
     }
 
@@ -704,6 +687,7 @@ a:hover {
     .active-card {
         display: flex;
         padding-bottom: 0;
+        margin-bottom: -4px;
     }
 
     .active-card:nth-child(2n+2) {
@@ -712,6 +696,9 @@ a:hover {
 
     .active-image-one, .active-image-two, .active-image-three {
         width: 50%;
+    }
+
+    .active-image-link {
         min-height: 730px;
     }
 
@@ -719,10 +706,7 @@ a:hover {
         margin-left: calc(50% - 80px);
         padding: 60px 65px 65px;
         margin-top: 265px;
-    }
-
-    .active-number:nth-child(even) {
-
+        left: 0;
     }
 
     .active-container {
